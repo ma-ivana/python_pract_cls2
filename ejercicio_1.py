@@ -1,3 +1,5 @@
+ruta = "biblioteca_de_babel.txt"
+
 def contar_frecuencias(ruta):
     """
     Lee un archivo de texto y devuelve un diccionario con la
@@ -12,7 +14,7 @@ def contar_frecuencias(ruta):
     # TODO: completar la sentencia para abrir el archivo "ruta" en modo
     # lectura ("r"), usando codificacion utf-8, y asignarlo a la
     # variable "archivo"
-    with open("biblioteca_de_babel.txt", "r", encoding="utf-8") as archivo:
+    with open(ruta, "r", encoding="utf-8") as archivo:
         texto = archivo.read()
 
     palabras = texto.lower().split()
@@ -24,7 +26,7 @@ def contar_frecuencias(ruta):
     return frecuencias
 
 def main():
-    frecuencias = contar_frecuencias("biblioteca_de_babel.txt")
+    frecuencias = contar_frecuencias(ruta)
 
     print(f"Cantidad de palabras totales: {sum(frecuencias.values())}")
     print(f"Cantidad de palabras distintas: {len(frecuencias)}")

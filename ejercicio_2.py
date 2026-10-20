@@ -1,4 +1,5 @@
 import string
+ruta = "biblioteca_de_babel.txt"
 
 STOP_WORDS = {
     "el", "la", "los", "las", "de", "del", "y", "a", "en", "un", "una",
@@ -23,7 +24,7 @@ Retorna:
 
 
 def main():
-    with open("biblioteca_de_babel.txt", "r", encoding="utf-8") as archivo:
+    with open(ruta, "r", encoding="utf-8") as archivo:
         texto = archivo.read()
 
     tokens = tokenizar(texto)
