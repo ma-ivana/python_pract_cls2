@@ -1,7 +1,7 @@
 # Salidas de Ejercicio 1 y Ejercicio 2:
 
 ## Ejercicio 1:
-**Cantidad de palabras totales:** 2550
+**Cantidad de palabras totales:** 2550  
 **Cantidad de palabras distintas:** 1170
 
 Las 10 palabras mas frecuentes:
